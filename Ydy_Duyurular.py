@@ -19,8 +19,8 @@ class TabWidget(QTabWidget):
         self.setTabsClosable(True)
         self.tabCloseRequested.connect( self.close_current_tab )
         self.setDocumentMode(True)
-        width = 600
-        height = 500
+        width = 600 #If you want you can increase or reduce the default size settings here.
+        height = 500 #If you want you can increase or reduce the default size settings here.
         self.setMinimumSize(width, height)
         baseurl = "https://ydy.deu.edu.tr/tr/duyurular"
         url = QUrl((baseurl))
